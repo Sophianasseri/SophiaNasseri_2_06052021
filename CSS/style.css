@@ -5,3 +5,81 @@ body {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+
+/*Header*/
+.site-header {
+    display: flex;
+    align-items: center;
+    margin: 5px 40px;
+    padding-top: 15px;
+}
+.site-header a {
+    padding-left:30px;
+    padding-right: 30px;
+}
+.site-logo {
+    max-height: 50px;
+}
+nav {
+    margin-left: auto;
+}
+.navigation {
+    display: flex;
+} 
+.active, .subscribe-btn {
+    color: #0065FC;  
+}
+.active {
+   border-top: solid #0065FC 2px;
+   padding-top: 34px;
+}
+.subscribe-btn {
+    font-weight: 600;
+}
+.subscribe-btn, .navigation li {
+    margin: 0 5px;
+}
+
+/*Mobile*/
+@media (max-width: 576px) {
+
+    /*Header*/
+    .site-header {
+        flex-wrap: wrap;
+        margin: 15px 0px;
+        border-bottom: solid #F2F2F2 3px;
+    }
+    nav a {
+        padding: 5px 50% 21px 50%;
+    }
+    .site-logo {
+        max-height: 40px;
+        order: -2;
+        margin-left: 20px;
+    }
+    .subscribe-btn{
+        order: -1 ;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    nav {
+      margin: 10px 10px 5px 0px; 
+    }
+    .navigation {
+        padding:0
+    }
+    .navigation li {
+        margin: 5px 10px 0px 0px;
+    } 
+    .active {
+        border-top: none;
+        border-bottom: solid #0065FC 3px;
+    }
+}
