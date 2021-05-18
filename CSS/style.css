@@ -77,6 +77,9 @@ nav {
 ::placeholder {
     color: black;
 }
+.searchbar input:focus {
+    outline: none;
+}
 
 .searchbar input:active {
 color: none;
@@ -88,6 +91,10 @@ color: none;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     font-weight: 500;
+    opacity: 1;
+}
+.searchbar-btn:hover {
+opacity: 0.8;
 }
 .searchbar-logo {
     background: #F2F2F2;
