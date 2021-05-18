@@ -47,6 +47,64 @@ nav {
     margin: 0 5px;
 }
 
+/*Recherche et filtres*/
+#hebergements {
+    margin: 30px 40px;
+}
+#hebergements h1 {
+    font-size: 22px;
+}
+#hebergements p {
+    font-size: 15px;
+}
+
+/*Barre de recherche*/
+.searchbar {
+    display: flex;
+}
+.searchbar input, .searchbar i, .searchbar-btn{
+    padding: 12px 20px;
+}
+.searchbar input {
+    border-left:none;
+    border-right: none;
+    border-bottom: 1px #F2F2F2 solid;
+    border-top: 1px #F2F2F2 solid;
+    margin: 0 -4px;
+    font-weight: 700;
+    color: black;
+}
+::placeholder {
+    color: black;
+}
+
+.searchbar input:active {
+color: none;
+}
+.searchbar-btn {
+    background: #0065FC;
+    color: white;
+    border: none ;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-weight: 500;
+}
+.searchbar-logo {
+    background: #F2F2F2;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;   
+}
+.searchbar-logo i {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
 /*Mobile*/
 @media (max-width: 576px) {
 
