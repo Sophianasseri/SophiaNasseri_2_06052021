@@ -12,6 +12,11 @@ a{
 li {
     list-style: none;
 }
+/*Polices*/
+
+.searchbar input, .filter button, .filter-name {
+    font-weight: 700;
+} 
 
 /*Header*/
 .site-header {
@@ -51,10 +56,10 @@ nav {
 #hebergements {
     margin: 30px 40px;
 }
-#hebergements h1 {
+.search-title {
     font-size: 22px;
 }
-#hebergements p {
+.search-description{
     font-size: 15px;
 }
 
@@ -71,7 +76,6 @@ nav {
     border-bottom: 1px #F2F2F2 solid;
     border-top: 1px #F2F2F2 solid;
     margin: 0 -4px;
-    font-weight: 700;
     color: black;
 }
 ::placeholder {
@@ -103,6 +107,38 @@ opacity: 0.8;
 }
 .searchbar-logo i {
     font-size: 15px;
+}
+
+/*Filtres*/
+.filter {
+    display: flex;
+    margin-top: 30px;   
+}
+.filter p {
+    margin-right: 30px;
+}
+.filter button {
+    display: flex;
+    align-items: center;
+    border: solid 2px #F2F2F2;
+    border-left: none;
+    border-radius: 30px;
+    padding: 2px 30px 2px 0px;
+    background: none;
+    max-height: 40px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.filter i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0065FC;
+    background: #DEEBFF; 
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 
