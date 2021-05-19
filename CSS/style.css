@@ -12,6 +12,9 @@ a{
 li {
     list-style: none;
 }
+i.fas {
+    display: flex;
+}
 /*Polices*/
 
 .btn, .searchbar__box, .filter__name {
@@ -137,6 +140,24 @@ opacity: 0.8;
     border-radius: 50%;
     margin-right: 10px;
 }
+.search-result {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.search-result__logo{
+display: flex;
+justify-content: center;
+align-items: center;
+color: #0065FC;
+font-size: 12px;
+border:#DEEBFF solid 2px;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
 
 
 
