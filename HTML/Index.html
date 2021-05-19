@@ -18,47 +18,47 @@
   </head>
   <body>
     <!--Header-->
-    <header class="site-header">
+    <header class="header">
       <img
-        class="site-logo"
+        class="header__logo"
         src="../images/logo/Reservia@3x.png"
         alt="Site logo"
       />
-      <nav>
-        <ul class="navigation">
-          <li><a class="active" href="#hebergements">Hébergements</a></li>
-          <li><a href="#activites">Activités</a></li>
+      <nav class="header__menu">
+        <ul class="header__navigation">
+          <li><a class="header__btn header__btn--active" href="#hebergements">Hébergements</a></li>
+          <li><a class="header__btn" href="#activites">Activités</a></li>
         </ul>
       </nav>
-      <a href="#" class="subscribe-btn">S'inscrire</a>
+      <a href="#" class="header__btn header__btn--signUp">S'inscrire</a>
     </header>
 
     <main>
       <!--Recherche et filtres-->
-      <section id="hebergements">
-        <h1 class="search-title">
+      <section id="hebergements" class="search">
+        <h1 class="search__title">
           Trouvez votre hébergement pour des vacances de rêve
         </h1>
-        <p class="search-description">
+        <p class="search__description">
           En plein centre ville ou en pleine nature
         </p>
 
         <!--Barre de recherche-->
         <div class="searchbar">
-          <div class="searchbar-logo">
+          <div class="searchbar__logo">
             <i class="fas fa-map-marker-alt "></i>
           </div>
-          <input type="text" placeholder="Marseille, France" />
-          <button class="searchbar-btn">Rechercher</button>
+          <input class="searchbar__box" type="text" placeholder="Marseille, France" />
+          <button class="searchbar__btn btn">Rechercher</button>
         </div>
 
         <!--Filtres-->
         <div class="filter">
-          <p class="filter-name">Filtres</p>
-            <button> <i class="fas fa-money-bill-wave"></i>Économique</button>
-            <button><i class="fas fa-child"></i>Familial</button>
-            <button><i class="fas fa-heart"></i>Romantique</button>
-            <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+          <p class="filter__name">Filtres</p>
+            <button class="filter__btn btn"> <i class="filter__logo fas fa-money-bill-wave"></i>Économique</button>
+            <button class="filter__btn btn"><i class="filter__logo  fas fa-child"></i>Familial</button>
+            <button class="filter__btn btn"><i class="filter__logo fas fa-heart"></i>Romantique</button>
+            <button class="filter__btn btn"><i class="filter__logo fas fa-dog"></i>Animaux autorisés</button>
         </div>
       </section>
     </main>

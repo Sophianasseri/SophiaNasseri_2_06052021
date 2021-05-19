@@ -14,52 +14,51 @@ li {
 }
 /*Polices*/
 
-.searchbar input, .filter button, .filter-name {
+.btn, .searchbar__box, .filter__name {
     font-weight: 700;
 } 
 
 /*Header*/
-.site-header {
+.header {
     display: flex;
     align-items: center;
     margin: 5px 40px;
     padding-top: 15px;
 }
-.site-header a {
-    padding-left:30px;
-    padding-right: 30px;
+.header__btn {
+  padding: 0 30px;
 }
-.site-logo {
+.header__logo{
     max-height: 50px;
 }
-nav {
+.header__menu {
     margin-left: auto;
 }
-.navigation {
+.header__navigation {
     display: flex;
 } 
-.active, .subscribe-btn {
+.header__btn--active, .header__btn--signUp {
     color: #0065FC;  
 }
-.active {
+.header__btn--active {
    border-top: solid #0065FC 2px;
    padding-top: 34px;
 }
-.subscribe-btn {
+.header__btn--signUp {
     font-weight: 600;
 }
-.subscribe-btn, .navigation li {
+.header__btn--signUp, .header__navigation li {
     margin: 0 5px;
 }
 
 /*Recherche et filtres*/
-#hebergements {
+.search {
     margin: 30px 40px;
 }
-.search-title {
+.search__title {
     font-size: 22px;
 }
-.search-description{
+.search__description{
     font-size: 15px;
 }
 
@@ -67,10 +66,16 @@ nav {
 .searchbar {
     display: flex;
 }
-.searchbar input, .searchbar i, .searchbar-btn{
+.searchbar__box, .searchbar__logo, .searchbar__btn{
     padding: 12px 20px;
 }
-.searchbar input {
+.searchbar__logo {
+    background: #F2F2F2;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; 
+    font-size: 15px; 
+}
+.searchbar__box {
     border-left:none;
     border-right: none;
     border-bottom: 1px #F2F2F2 solid;
@@ -81,43 +86,31 @@ nav {
 ::placeholder {
     color: black;
 }
-.searchbar input:focus {
+.searchbar__box:focus {
     outline: none;
 }
-
-.searchbar input:active {
-color: none;
-}
-.searchbar-btn {
+.searchbar__btn {
     background: #0065FC;
     color: white;
     border: none ;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    font-weight: 500;
     opacity: 1;
 }
-.searchbar-btn:hover {
+.searchbar__btn:hover {
 opacity: 0.8;
 }
-.searchbar-logo {
-    background: #F2F2F2;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;   
-}
-.searchbar-logo i {
-    font-size: 15px;
-}
+
 
 /*Filtres*/
 .filter {
     display: flex;
     margin-top: 30px;   
 }
-.filter p {
+.filter__name {
     margin-right: 30px;
 }
-.filter button {
+.filter__btn {
     display: flex;
     align-items: center;
     border: solid 2px #F2F2F2;
@@ -129,7 +122,7 @@ opacity: 0.8;
     margin: 0 10px;
     font-size: 16px;
 }
-.filter i {
+.filter__logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,34 +145,34 @@ opacity: 0.8;
 @media (max-width: 576px) {
 
     /*Header*/
-    .site-header {
+    .header {
         flex-wrap: wrap;
         margin: 15px 0px;
         border-bottom: solid #F2F2F2 3px;
     }
-    nav a {
-        padding: 5px 50% 21px 50%;
+    .header__navigation a {
+        padding: 5px 40px 21px 40px; 
     }
-    .site-logo {
+    .header__logo {
         max-height: 40px;
         order: -2;
         margin-left: 20px;
     }
-    .subscribe-btn{
+    .header__btn--signUp{
         order: -1 ;
         margin-left: auto;
         margin-right: 20px;
     }
-    nav {
+    .header__menu {
       margin: 10px 10px 5px 0px; 
     }
-    .navigation {
+    .header__navigation {
         padding:0
     }
-    .navigation li {
-        margin: 5px 10px 0px 0px;
+    .header__navigation li {
+        margin: 5px 20px 0px 0px;
     } 
-    .active {
+    .header__btn--active {
         border-top: none;
         border-bottom: solid #0065FC 3px;
     }
