@@ -18,6 +18,9 @@ i.fas {
 .container {
     margin: 10px 50px;
 }
+.searchbar__logo, .city-accommodation, .popular-accommodation, .footer {
+    background: #F2F2F2;
+}
 /*Polices*/
 
 .btn, .searchbar__box, .filter__name {
@@ -76,7 +79,6 @@ button {
     padding: 12px 20px;
 }
 .searchbar__logo {
-    background: #F2F2F2;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px; 
     font-size: 15px; 
@@ -179,7 +181,6 @@ margin-right: 10px;
     
 }
 .city-accommodation, .popular-accommodation{
-    background: #F2F2F2;
     border-radius: 30px;
     padding: 1% 2% 0;
 }
@@ -304,6 +305,18 @@ margin-right: 10px;
 .activity-card__title {
     font-size: 16px;
     margin: 10px 20px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    height: 170px;
+    width: 100%;
+}
+.footer-section {
+    margin:0 10% 0 3%;
+}
+.footer-section__content {
+    padding:0;
 }
 
   
