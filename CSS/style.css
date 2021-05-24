@@ -160,8 +160,20 @@ width: 20px;
 border-radius: 50%;
 margin-right: 10px;
 }
-
-/*Cartes hébergements*/
+/*Structure générale des cartes*/
+.city-card, .popular-card, .activity-card {
+    background: white;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px -2px rgba(0,0,0,0.24);
+}
+.city-card__picture, .popular-card__picture, .activity-card__picture {
+    object-fit: cover;
+    width: 100%;
+}
+.city-card__picture, .activity-card__picture {
+    border-radius: 25px 25px 0 0;
+}
+/*Structure cartes hébergements*/
 .accommodation {
     display: flex;
     
@@ -172,9 +184,7 @@ margin-right: 10px;
     padding: 1% 2% 0;
 }
 .city-card, .popular-card {
-    background: white;
     padding: 5px;
-    border-radius: 25px;
 }
 .city-card__rating, .popular-card__rating {
     display: flex;
@@ -195,13 +205,9 @@ margin-right: 10px;
     width: 245px;
     height: 200px;
     margin: 5px 0;
-    box-shadow: 4px 4px 8px -2px rgba(0,0,0,0.24);
 }
 .city-card__picture {
     height: 120px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 25px 25px 0 0;
 }
 .city-card__title, .city-card__description, .city-card__rating {
     margin:  6px 0 6px 15px;
@@ -235,8 +241,6 @@ margin-right: 10px;
 .popular-card__picture {
     max-height: 200px;
     max-width: 150px;
-    width: 100%;
-    object-fit: cover;
     border-radius: 25px 0 0 25px;
 }
 .popular-card__content {
@@ -255,6 +259,54 @@ margin-right: 10px;
     margin-top: 50px;
     font-size: 0.8em;
 }
+/*Cartes activités*/
+.activity__layout {
+    display: flex;
+}
+.activity-card {
+    width: 300px;
+    margin:0 3vw 5vh 0;
+}
+.activity-card--xlarge {
+    height: 400px;
+}
+.activity-card__picture--xlarge {
+    height: 350px;
+    object-position: 35% 40%;
+}
+.activity-card--large {
+    height: 200px;
+}
+.activity-card__picture--large {
+    height: 150px;
+    object-position: 50% 45%;
+}
+.activity-card--xsmall {
+    height: 150px;
+}
+.activity-card__picture--xsmall {
+    height: 100px;
+    object-position: 50% 25%;
+}
+.activity-card--small{
+    height: 160px;
+}
+.activity-card__picture--small {
+    height: 110px;
+    object-position: 50% 1%;
+}
+.activity-card--medium {
+    height: 190px;
+}
+.activity-card__picture--medium {
+    height: 140px;
+}
+.activity-card__title {
+    font-size: 16px;
+    margin: 10px 20px;
+}
+
+  
 
 
 
