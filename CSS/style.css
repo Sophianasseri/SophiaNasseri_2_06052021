@@ -168,12 +168,23 @@ margin-right: 10px;
 }
 .city-accommodation, .popular-accommodation{
     background: #F2F2F2;
+    border-radius: 30px;
+    padding: 1% 2% 0;
+}
+.city-card, .popular-card {
+    background: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+.city-card__rating, .popular-card__rating {
+    display: flex;
+    color: #0065FC;
 }
 /*Cartes villes*/
 .city-accommodation {
     margin-right: 3%;
-    padding: 1% 2% 0;
-    border-radius: 30px;
+    
+    
 }.city-accommodation__layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -181,11 +192,8 @@ margin-right: 10px;
     grid-gap: 30px;
 }
 .city-card{
-    background: white;
     width: 245px;
     height: 200px;
-    padding: 5px;
-    border-radius: 30px;
     margin: 5px 0;
     box-shadow: 4px 4px 8px -2px rgba(0,0,0,0.24);
 }
@@ -193,7 +201,7 @@ margin-right: 10px;
     height: 120px;
     width: 100%;
     object-fit: cover;
-    border-radius: 30px 30px 0 0;
+    border-radius: 25px 25px 0 0;
 }
 .city-card__title, .city-card__description, .city-card__rating {
     margin:  6px 0 6px 15px;
@@ -201,10 +209,6 @@ margin-right: 10px;
 }
 .city-card__title {
     font-size: 1em;
-}
-.city-card__rating {
-    display: flex;
-    color: #0065FC;
 }
 .card__rating--grey {
     color: #d5d9db;
@@ -216,6 +220,41 @@ margin-right: 10px;
 }
 
 /*Cartes populaires*/ 
+.popular-accommodation__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-card {
+    display: flex;
+    margin: 20px 0;
+    height: 150px;
+    width: 350px;
+}
+
+.popular-card__picture {
+    max-height: 200px;
+    max-width: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 0 0 25px;
+}
+.popular-card__content {
+    margin-left: 20px;
+}
+.popular-card__title, .popular-card__description {
+    margin: 10px 0;
+}
+.popular-card__title {
+    font-size: 1em;
+}
+.popular-card__description {
+    font-size: 0.9em;
+}
+.popular-card__rating {
+    margin-top: 50px;
+    font-size: 0.8em;
+}
 
 
 
