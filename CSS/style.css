@@ -1,11 +1,8 @@
-/*Structure générale*/
-body {
+/*----------Structure générale----------*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-ul {
-    padding: 0;
 }
 a {
     text-decoration: none;
@@ -38,7 +35,7 @@ button {
     font-family: "Raleway", sans-serif;
 }
 
-/*Header*/
+/*----------Header----------*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +43,7 @@ button {
     padding: 1rem 2rem
 }
 .header__btn {
-    padding: 1.8rem 1.5rem;
+    padding: 1.5rem;
 }
 .header__navigation {
     display: flex;
@@ -58,14 +55,15 @@ button {
     border-top: solid #0065fc 2px;
 }
 
-/*Recherche et filtres*/
-.search__title {
-    font-size: 22px;
+/*----------Recherche et filtres----------*/
+
+/*Structure générale*/
+.search {
+    padding: 1rem 0;
 }
 .search__description {
-    font-size: 15px;
+margin: 0.5rem 0 1rem 0
 }
-
 /*Barre de recherche*/
 .searchbar {
     display: flex;
@@ -73,26 +71,25 @@ button {
 .searchbar__box,
 .searchbar__logo,
 .searchbar__btn {
-    padding: 12px 20px;
+    padding: 0.9rem 1.2rem;
+}
+.searchbar__box, .searchbar__btn, .filter__btn {
+    font-size: 1rem
 }
 .searchbar__logo {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    font-size: 15px;
+    font-size: 1.2rem;
 }
 .searchbar__box {
     border-left: none;
     border-right: none;
     border-bottom: 1px #f2f2f2 solid;
     border-top: 1px #f2f2f2 solid;
-    margin: 0 -4px;
     color: black;
 }
 ::placeholder {
     color: black;
-}
-.searchbar__box:focus {
-    outline: none;
 }
 .searchbar__btn {
     background: #0065fc;
@@ -101,6 +98,7 @@ button {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     opacity: 1;
+    font-weight: 600;
 }
 .searchbar__btn:hover {
     opacity: 0.8;
@@ -109,10 +107,11 @@ button {
 /*Filtres*/
 .filter {
     display: flex;
-    margin-top: 30px;
+    align-items: center;
+    padding: 2rem 0;
 }
-.filter__name {
-    margin-right: 30px;
+.filter__name, .filter__logo, .search-result__logo {
+    margin-right: 1rem;
 }
 .filter__btn {
     display: flex;
@@ -120,11 +119,10 @@ button {
     border: solid 2px #f2f2f2;
     border-left: none;
     border-radius: 30px;
-    padding: 2px 30px 2px 0px;
+    padding-right: 2rem;
     background: none;
-    max-height: 40px;
-    margin: 0 10px;
-    font-size: 16px;
+    height: 3rem;
+    margin: 0 1rem;
     opacity: 1;
 }
 .filter__btn:hover {
@@ -136,13 +134,12 @@ button {
     align-items: center;
     color: #0065fc;
     background: #deebff;
-    height: 42px;
-    width: 42px;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
-    margin-right: 10px;
 }
 .search-result {
-    margin-top: 30px;
     display: flex;
     align-items: center;
 }
@@ -153,10 +150,10 @@ button {
     color: #0065fc;
     font-size: 12px;
     border: #deebff solid 2px;
-    height: 20px;
-    width: 20px;
+    padding: 1em;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 50%;
-    margin-right: 10px;
 }
 /*Structure générale des cartes*/
 .city-card,
