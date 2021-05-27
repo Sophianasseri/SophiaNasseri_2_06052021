@@ -15,7 +15,8 @@
 </head>
 
 <body>
-  <!----------Header---------->
+  <div class="container">
+     <!----------Header---------->
   <header class="header">
     <img class="header__logo" src="../images/logo/Reservia.svg" alt="Logo du site" />
     <nav class="header__menu">
@@ -29,7 +30,7 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
     <!--------Recherche et filtres---------->
     <section id="hebergements" class="search">
       <h1 class="search__title">
@@ -72,7 +73,7 @@
       </div>
     </section>
 
-    <!--Cartes hébergements-->
+    <!----------Cartes hébergements--------->
     <section class="accommodation">
       <!--Cartes ville-->
       <div class="city-accommodation">
@@ -82,86 +83,98 @@
             <article class="city-card">
               <img class="city-card__picture" src="../images/hebergements/AubergeDeLaCannebiere.jpg"
                 alt="Auberge de la Cannebière" />
-              <h3 class="city-card__title">Auberge de la Cannebière</h3>
-              <p class="city-card__description">Nuit à partir de 25€</p>
-              <div class="city-card__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="card__rating--grey fas fa-star"></i>
+              <div class="city-card__content">
+                <h3 class="city-card__title">Auberge de la Cannebière</h3>
+                <p class="city-card__description">Nuit à partir de <span class="price">25€</span> </p>
+                <div class="city-card__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="card__rating--grey fas fa-star"></i>
+                </div>
               </div>
             </article>
           </a>
           <a href="#">
             <article class="city-card">
-              <img class="city-card__picture" src="../images/hebergements/HotelDuPort.jpg" alt="Hôtel du port" />
-              <h3 class="city-card__title">Hôtel du port</h3>
-              <p class="city-card__description">Nuit à partir de 52€</p>
+              <img class="city-card__picture" src="../images/hebergements/HotelDuPort.jpg" alt="Hôtel du port"/>
+              <div class="city-card__content">
+                <h3 class="city-card__title">Hôtel du port</h3>
+              <p class="city-card__description">Nuit à partir de 52<span class="price">€</span></p>
               <div class="city-card__rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
+              </div>
               </div>
             </article>
           </a>
           <a href="#">
             <article class="city-card">
               <img class="city-card__picture" src="../images/hebergements/HotelLesMouettes.jpg"
-                alt="Hôtel les mouettes" />
-              <h3 class="city-card__title">Hôtel les mouettes</h3>
-              <p class="city-card__description">Nuit à partir de 76€</p>
-              <div class="city-card__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="card__rating--grey fas fa-star"></i>
+                alt="Hôtel les mouettes"/>
+              <div class="city-card__content">
+                <h3 class="city-card__title">Hôtel les mouettes</h3>
+                <p class="city-card__description">Nuit à partir de 76<span class="price">€</span></p>
+                <div class="city-card__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="card__rating--grey fas fa-star"></i>
+                </div>
               </div>
             </article>
           </a>
           <a href="#">
             <article class="city-card">
-              <img class="city-card__picture" src="../images/hebergements/hotelDeLaMer.jpg" alt="Hôtel de la mer" />
-              <h3 class="city-card__title">Hôtel de la mer</h3>
-              <p class="city-card__description">Nuit à partir de 46€</p>
-              <div class="city-card__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="card__rating--grey fas fa-star"></i>
-                <i class="card__rating--grey fas fa-star"></i>
+              <img class="city-card__picture" src="../images/hebergements/hotelDeLaMer.jpg" alt="Hôtel de la mer"/>
+              <div class="city-card__content">
+                <h3 class="city-card__title">Hôtel de la mer</h3>
+                <p class="city-card__description">Nuit à partir de 46<span class="price">€</span></p>
+                <div class="city-card__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="card__rating--grey fas fa-star"></i>
+                  <i class="card__rating--grey fas fa-star"></i>
+                </div>
               </div>
             </article>
           </a>
           <a href="#">
             <article class="city-card">
               <img class="city-card__picture" src="../images/hebergements/AubergeLePanier.jpg"
-                alt="Auberge Le Panier" />
-              <h3 class="city-card__title">Auberge Le Panier</h3>
-              <p class="city-card__description">Nuit à partir de 23€</p>
-              <div class="city-card__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="card__rating--grey fas fa-star"></i>
-              </div>
+                alt="Auberge Le Panier"/>
+                <div class="city-card__content">
+                  <h3 class="city-card__title">Auberge Le Panier</h3>
+                  <p class="city-card__description">Nuit à partir de <span class="price">23€</span></p>
+                  <div class="city-card__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="card__rating--grey fas fa-star"></i>
+                  </div>
+                </div>
             </article>
           </a>
           <a href="#">
             <article class="city-card">
-              <img class="city-card__picture" src="../images/hebergements/hotelChezAmina.jpg" alt="Hôtel chez Amina" />
-              <h3 class="city-card__title">Hôtel chez Amina</h3>
-              <p class="city-card__description">Nuit à partir de 96€</p>
-              <div class="city-card__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="card__rating--grey fas fa-star"></i>
+              <img class="city-card__picture" src="../images/hebergements/hotelChezAmina.jpg" alt="Hôtel chez Amina"/>
+              <div class="city-card__content">
+                <h3 class="city-card__title">Hôtel chez Amina</h3>
+                <p class="city-card__description">Nuit à partir de 96<span class="price">€</span></p>
+                <div class="city-card__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="card__rating--grey fas fa-star"></i>
+                </div>
               </div>
             </article>
           </a>
@@ -173,7 +186,7 @@
       <div class="popular-accommodation">
         <div class="popular-accommodation__header">
           <h2 class="popular-accommodation__title">Les plus populaires</h2>
-          <i class="fas fa-chart-line"></i>
+          <i class="popular-accommodation__logo fas fa-chart-line"></i>
         </div>
         <div class="popular-accommodation__layout">
           <a href="#">
@@ -182,7 +195,7 @@
                 class="popular-card__picture">
               <div class="popular-card__content">
                 <h3 class="popular-card__title">Hôtel Le soleil du matin</h3>
-                <p class="popular-card__description">Nuit à partir de 128€</p>
+                <p class="popular-card__description">Nuit à partir de 128<span class="price">€</span></p>
                 <div class="popular-card__rating">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -199,7 +212,7 @@
                 class="popular-card__picture">
               <div class="popular-card__content">
                 <h3 class="popular-card__title">Au cœur de l'eau Chambres d'hôtes</h3>
-                <p class="popular-card__description">Nuit à partir de 71€</p>
+                <p class="popular-card__description">Nuit à partir de 71<span class="price">€</span></p>
                 <div class="popular-card__rating">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -217,7 +230,7 @@
                 class="popular-card__picture">
               <div class="popular-card__content">
                 <h3 class="popular-card__title">Hôtel Tout bleu et Blanc</h3>
-                <p class="popular-card__description">Nuit à partir de 68€</p>
+                <p class="popular-card__description">Nuit à partir de 68<span class="price">€</span></p>
                 <div class="popular-card__rating">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -232,7 +245,7 @@
       </div>
     </section>
 
-    <!--Cartes activités-->
+    <!----------Cartes activités---------->
     <section class="activity">
       <h2 class="activiy__title">Activités à Marseille</h2>
       <div class="activity__layout">
@@ -285,8 +298,10 @@
       </div>
     </section>
   </main>
+  </div>
+ 
 
-  <!--Footer-->
+  <!---------Footer---------->
   <footer class="footer">
     <div class="footer-section">
       <h4 class="footer-section__title">À Propos</h4>
