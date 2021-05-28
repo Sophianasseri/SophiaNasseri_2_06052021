@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-.container {
+.container, .header {
     margin: 0 4%;
 }
 a {
@@ -78,8 +78,9 @@ i.fas {
 }
 .searchbar__box,
 .searchbar__logo,
-.searchbar__btn {
-    padding: 0.9rem 1.2rem;
+.searchbar__btn,
+.searchbar__btn--mobile {
+    padding: 0.9rem 1em;
 }
 .searchbar__box,
 .searchbar__btn,
@@ -87,8 +88,7 @@ i.fas {
     font-size: 1rem;
 }
 .searchbar__logo {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-radius: 12px 0 0 12px;
     font-size: 1.2rem;
 }
 .searchbar__box {
@@ -101,13 +101,19 @@ i.fas {
 ::placeholder {
     color: black;
 }
-.searchbar__btn {
+.searchbar__btn, .searchbar__btn--mobile {
     background: #0065fc;
     color: white;
     border: none;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+}
+.searchbar__btn {
+    border-radius: 0 12px 12px 0;
     opacity: 1;
+}
+@media (min-width: 576px) {
+.searchbar__btn--mobile {
+    display: none;
+}
 }
 .searchbar__btn:hover {
     opacity: 0.8;
@@ -301,7 +307,7 @@ i.fas {
     margin: 0;
 }
 .activity-card {
-    margin: 5% 0 15% 0;
+    margin: 2% 0 15% 0;
 }
 .activity-card--xlarge {
     height: 400px;
@@ -352,42 +358,56 @@ i.fas {
 .footer-section {
     margin: 0 10% 0 3%;
 }
-.footer-section__content {
-    padding: 0;
-}
 
 /*--------------------Version Mobile--------------------*/
 @media (max-width: 576px) {
+    .container {
+        margin: 4%;
+    }
+    h1, h2 {
+        font-size: 1.3rem;
+    }
     /*----------Header---------*/
+    
     .header {
+        margin:0;
         flex-wrap: wrap;
-        margin: 15px 0px;
-        border-bottom: solid #f2f2f2 3px;
-    }
-    .header__navigation a {
-        padding: 5px 40px 21px 40px;
-    }
-    .header__logo {
-        max-height: 40px;
-        order: -2;
-        margin-left: 20px;
-    }
-    .header__btn--signUp {
-        order: -1;
-        margin-left: auto;
-        margin-right: 20px;
-    }
-    .header__menu {
-        margin: 10px 10px 5px 0px;
-    }
-    .header__navigation {
         padding: 0;
     }
-    .header__navigation li {
-        margin: 5px 20px 0px 0px;
+    .header__btn, .header__logo {
+        padding: 2rem;
+    }
+    .header__menu {
+    border-bottom: solid #f2f2f2 3px;
+    }
+    .header__btn--signUp {
+        position: absolute;
+        bottom: 90px;
+        right: 1px;
+    }
+    .header__navigation {
+        position: relative;
+        padding: 2rem 0;
     }
     .header__btn--active {
         border-top: none;
         border-bottom: solid #0065fc 3px;
+    }
+
+    /*----------Recherche et filtres---------*/
+    .search__title, .search__description {
+        margin-right: 5%;
+    }
+    .searchbar__btn {
+        display: none;
+    }
+    .searchbar__box {
+       padding: 1em 2em 1em 1em;
+    }
+    .searchbar__btn--mobile {
+        font-size: 1.1rem;
+        border-radius: 30%;
+        padding: 1em ;
+        margin-left: -10px;
     }
 }

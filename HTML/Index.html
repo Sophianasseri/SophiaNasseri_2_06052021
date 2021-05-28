@@ -15,8 +15,6 @@
 </head>
 
 <body>
-  <div class="container">
-     <!----------Header---------->
   <header class="header">
     <img class="header__logo" src="../images/logo/Reservia.svg" alt="Logo du site" />
     <nav class="header__menu">
@@ -24,12 +22,13 @@
         <li>
           <a class="header__btn header__btn--blue header__btn--active" href="#hebergements">Hébergements</a>
         </li>
-        <li><a class="header__btn" href="#activites">Activités</a></li>
-        <li><a href="#" class="header__btn header__btn--blue btn">S'inscrire</a></li>
+        <li><a class="header__btn " href="#activites">Activités</a></li>
+        <li><a href="#" class="header__btn header__btn--blue header__btn--signUp btn">S'inscrire</a></li>
       </ul>
     </nav>
   </header>
-
+  <div class="container">
+     <!----------Header---------->
   <main>
     <!--------Recherche et filtres---------->
     <section id="hebergements" class="search">
@@ -47,6 +46,7 @@
         </div>
         <input class="searchbar__box" type="text" placeholder="Marseille, France" />
         <button class="searchbar__btn btn">Rechercher</button>
+        <button class="searchbar__btn--mobile btn"><i class="fas fa-search"></i></button>
       </div>
 
       <!--Filtres-->
@@ -300,7 +300,6 @@
   </main>
   </div>
  
-
   <!---------Footer---------->
   <footer class="footer">
     <div class="footer-section">
@@ -327,5 +326,4 @@
     </div>
   </footer>
 </body>
-
 </html>
