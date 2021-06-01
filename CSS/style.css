@@ -11,7 +11,8 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-.container, .header {
+.container,
+.header {
     margin: 0 4%;
 }
 a {
@@ -56,12 +57,14 @@ i.fas {
 .header__navigation {
     display: flex;
 }
-.header__btn--blue {
+.header__btn--signUp {
     color: #0065fc;
 }
-.header__btn--active {
-    border-top: solid #0065fc 2px;
+.header__btn--accommodation:hover, .header__btn--activity:hover{
+    border-top: solid 3px #0065fc;
+    color: #0065fc;
 }
+
 
 /*----------Recherche et filtres----------*/
 
@@ -101,7 +104,8 @@ i.fas {
 ::placeholder {
     color: black;
 }
-.searchbar__btn, .searchbar__btn--mobile {
+.searchbar__btn,
+.searchbar__btn--mobile {
     background: #0065fc;
     color: white;
     border: none;
@@ -111,9 +115,9 @@ i.fas {
     opacity: 1;
 }
 @media (min-width: 576px) {
-.searchbar__btn--mobile {
-    display: none;
-}
+    .searchbar__btn--mobile {
+        display: none;
+    }
 }
 .searchbar__btn:hover {
     opacity: 0.8;
@@ -217,10 +221,11 @@ i.fas {
 .popular-card {
     padding: 0.3rem;
 }
-.city-card__title, .popular-card__title {
+.city-card__title,
+.popular-card__title {
     font-size: 1em;
 }
-.city-card__description, 
+.city-card__description,
 .popular-card__description {
     font-size: 0.9em;
 }
@@ -237,6 +242,7 @@ i.fas {
 /*--Cartes villes--*/
 .city-accommodation {
     margin-right: 2rem;
+    width: 70%;
 }
 .city-accommodation__layout {
     display: grid;
@@ -273,6 +279,9 @@ i.fas {
 }
 
 /*--Cartes populaires--*/
+.popular-accommodation {
+    width: 30%;
+}
 .popular-accommodation__header {
     display: flex;
     justify-content: space-around;
@@ -285,7 +294,7 @@ i.fas {
     display: flex;
     margin-bottom: 20px;
     height: 150px;
-    width: 350px;
+    width: 100%;
 }
 .popular-card__picture {
     max-height: 200px;
@@ -362,52 +371,72 @@ i.fas {
     margin: 0 10% 0 3%;
 }
 
-/*--------------------Version Mobile--------------------*/
+/*------------------------------Version Mobile------------------------------*/
 @media (max-width: 576px) {
     .container {
         margin: 4%;
     }
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 1.3rem;
     }
     /*----------Header---------*/
-    
+
     .header {
-        margin:0;
+        margin: 0;
         flex-wrap: wrap;
         padding: 0;
+        
     }
-    .header__btn, .header__logo {
-        padding: 2rem;
+    .header__btn {
+        display: block;
+    }
+    .header__btn--signUp,
+    .header__logo {
+        padding: 1.5rem;
     }
     .header__menu {
-    border-bottom: solid #f2f2f2 3px;
+        text-align: center;
     }
+    .header li {
+        width:50%;
+    }
+   
     .header__btn--signUp {
         position: absolute;
-        bottom: 90px;
+        bottom: 80px;
         right: 1px;
     }
+    .header__menu {
+        width: 100%;
+    }
     .header__navigation {
+        flex-wrap: wrap;
         position: relative;
-        padding: 2rem 0;
     }
-    .header__btn--active {
-        border-top: none;
-        border-bottom: solid #0065fc 3px;
+    .header__btn--accommodation, .header__btn--activity{
+        border-bottom: solid 3px #d5d9db;
     }
+     .header__btn--accommodation:hover, .header__btn--activity:hover{
+         border-top: none;
+         border-bottom: solid 3px #0065fc;
+         color: #0065fc;
+     }
+    
+    
 
     /*----------Recherche et filtres---------*/
 
     /*------Barre de recherche-----*/
-    .search__title, .search__description {
+    .search__title,
+    .search__description {
         margin-right: 5%;
     }
     .searchbar__btn {
         display: none;
     }
     .searchbar__box {
-       padding: 1vh 5vw
+        padding: 1vh 5vw;
     }
     .searchbar__btn--mobile {
         font-size: 1.1rem;
@@ -418,15 +447,65 @@ i.fas {
     .filter {
         flex-direction: column;
         align-items: unset;
-        
     }
-    .filter__block{
+    .filter__block {
         align-items: flex-start;
         flex-wrap: wrap;
         margin-top: 1rem;
     }
-    .filter__btn{
+    .filter__btn {
         margin: 0.3rem 0.5rem 0.3rem 0;
         font-size: 0.9em;
+    }
+    /*----------Cartes hébergements et activités----------*/
+
+    /*---Structure générale des cartes---*/
+    .accommodation {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    /*cartes populaires*/
+    .popular-accommodation {
+        width: 100%;
+    }
+    /*cartes villes*/
+    .city-accommodation,
+    .city-accommodation__btn {
+        background: none;
+    }
+    .city-accommodation {
+        width: 100%;
+    }
+    .city-accommodation__layout {
+        display: flex;
+        flex-direction: column;
+    }
+    .city-card {
+        width: 100%;
+    }
+    /*Cartes activités*/
+    .activity {
+        padding: 1rem 0;
+    }
+    .activity__layout {
+        display: flex;
+        flex-direction: column;
+    }
+    .activity-card {
+        height: 200px;
+        margin: 1rem 0 0 0;
+    }
+
+    .activity-card__picture {
+        height: 150px;
+    }
+    /*----------Footer----------*/
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 300px;
+    }
+    .footer-section {
+        padding: 1rem 0.5rem;
     }
 }
