@@ -368,11 +368,19 @@ i.fas {
     display: flex;
     align-items: center;
     height: 170px;
-    width: 100%;
 }
 .footer-section {
     margin: 0 10% 0 3%;
 }
+.footer-section__content {
+    padding: 1rem 0;
+}
+@media (min-width: 1441px){
+    .footer{
+        margin: 0 3%;
+    }   
+}
+
 
 /*------------------------------Version Mobile------------------------------*/
 @media (max-width: 576px) {
