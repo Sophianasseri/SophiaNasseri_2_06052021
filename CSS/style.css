@@ -382,7 +382,7 @@ i.fas {
 }
 
 /*------------------------------Version Mobile------------------------------*/
-@media (max-width: 1024px)  {
+@media (max-width: 1023px)  {
     .container {
         margin: 4% 0;
     }
@@ -538,7 +538,7 @@ i.fas {
 }
 
 /*--------------------Version tablette----------------------*/
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1023px){
 .city-accommodation__layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -551,5 +551,34 @@ i.fas {
         display: contents;
     }
 }
+
+/*-------Responsive dekstiop petits écrans------*/
+@media (min-width: 1024px) and (max-width: 1200px){
+    .accommodation{
+        flex-direction: column;
+    }
+    .city-accommodation,
+    .popular-accommodation
+     {
+       width: 100%;
+    }
+    .city-accommodation__btn {
+        padding: 1.5rem;
+    }
+    .popular-accommodation {
+        margin-top: 2%;
+    }
+    .popular-accommodation__layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%
+    }
+    .activity-card__title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 
 
