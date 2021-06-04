@@ -208,6 +208,9 @@ i.fas {
     justify-content: space-between;
     padding: 2% 0;
 }
+.accommodation a {
+    width: 100%;
+}
 .city-accommodation,
 .popular-accommodation {
     border-radius: 20px;
@@ -302,6 +305,7 @@ i.fas {
 .popular-card__picture {
     max-height: 200px;
     width: 45%;
+    min-width: 45%;
     border-radius: 20px 0 0 20px;
 }
 .popular-card__content {
@@ -382,7 +386,7 @@ i.fas {
 }
 
 /*------------------------------Version Mobile------------------------------*/
-@media (max-width: 1023px)  {
+@media (max-width: 1023px) {
     .container {
         margin: 4% 0;
     }
@@ -484,7 +488,8 @@ i.fas {
     .popular-accommodation__layout {
         width: 100%;
     }
-    .city-accommodation, .popular-accommodation{
+    .city-accommodation,
+    .popular-accommodation {
         padding: 4%;
     }
     /*cartes populaires*/
@@ -524,8 +529,7 @@ i.fas {
 
     .activity-card__picture {
         height: 150px;
-    } 
-    
+    }
 }
 /*----------Footer----------*/
 @media (max-width: 767px) {
@@ -538,14 +542,17 @@ i.fas {
 }
 
 /*--------------------Version tablette----------------------*/
-@media (min-width: 768px) and (max-width: 1023px){
-.city-accommodation__layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.activity__layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 768px) and (max-width: 1023px) {
+    .accommodation {
+        padding: 0
+    }
+    .city-accommodation__btn {
+       padding-top: 2%; 
+    }
+    .city-accommodation__layout,
+    .activity__layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .activity__block {
         display: contents;
@@ -553,14 +560,13 @@ i.fas {
 }
 
 /*-------Responsive dekstiop petits écrans------*/
-@media (min-width: 1024px) and (max-width: 1200px){
-    .accommodation{
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .accommodation {
         flex-direction: column;
     }
     .city-accommodation,
-    .popular-accommodation
-     {
-       width: 100%;
+    .popular-accommodation {
+        width: 100%;
     }
     .city-accommodation__btn {
         padding: 1.5rem;
@@ -571,14 +577,11 @@ i.fas {
     .popular-accommodation__layout {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2%
+        grid-gap: 2%;
     }
-    .activity-card__title{
+    .activity-card__title {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 }
-
-
-
