@@ -114,7 +114,7 @@ i.fas {
     border-radius: 0 12px 12px 0;
     opacity: 1;
 }
-@media (min-width: 576px) {
+@media (min-width: 1024px) {
     .searchbar__btn--mobile {
         display: none;
     }
@@ -252,6 +252,7 @@ i.fas {
 }
 .city-card {
     margin: 2% 0;
+    width: 100%;
 }
 .city-card__picture {
     max-height: 115px;
@@ -283,13 +284,12 @@ i.fas {
 .popular-accommodation__header,
 .popular-accommodation__layout {
     width: 93%;
-    margin: auto; 
+    margin: auto;
 }
 .popular-accommodation__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
 }
 .popular-accommodation__logo {
     font-size: 1.5em;
@@ -359,8 +359,8 @@ i.fas {
     height: 140px;
 }
 .activity-card__title {
-    font-size: 16px;
-    margin: 10px 20px;
+    font-size: 1em;
+    margin: 4% 0 4% 5%;
 }
 
 /*----------Footer----------*/
@@ -375,17 +375,21 @@ i.fas {
 .footer-section__content {
     padding: 1rem 0;
 }
-@media (min-width: 1441px){
-    .footer{
+@media (min-width: 1441px) {
+    .footer {
         margin: 0 3%;
-    }   
+    }
 }
 
-
 /*------------------------------Version Mobile------------------------------*/
-@media (max-width: 576px) {
+@media (max-width: 1024px)  {
     .container {
-        margin: 4%;
+        margin: 4% 0;
+    }
+    .search,
+    .city-accommodation,
+    .activity {
+        margin: 0 4%;
     }
     h1,
     h2 {
@@ -474,9 +478,18 @@ i.fas {
         flex-direction: column-reverse;
         align-items: center;
     }
+    .city-accommodation,
+    .popular-accommodation,
+    .popular-accommodation__header,
+    .popular-accommodation__layout {
+        width: 100%;
+    }
+    .city-accommodation, .popular-accommodation{
+        padding: 4%;
+    }
     /*cartes populaires*/
     .popular-accommodation {
-        width: 100%;
+        border-radius: 0;
     }
     /*cartes villes*/
     .city-accommodation,
@@ -493,6 +506,9 @@ i.fas {
     .city-card {
         width: 100%;
     }
+    .city-accommodation__btn {
+        padding: 0;
+    }
     /*Cartes activités*/
     .activity {
         padding: 1rem 0;
@@ -508,14 +524,32 @@ i.fas {
 
     .activity-card__picture {
         height: 150px;
-    }
-    /*----------Footer----------*/
+    } 
+    
+}
+/*----------Footer----------*/
+@media (max-width: 767px) {
     .footer {
         flex-direction: column;
         align-items: flex-start;
         height: 300px;
-    }
-    .footer-section {
-        padding: 1rem 0.5rem;
+        padding: 1rem 0;
     }
 }
+
+/*--------------------Version tablette----------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+.city-accommodation__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.activity__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .activity__block {
+        display: contents;
+    }
+}
+
+
