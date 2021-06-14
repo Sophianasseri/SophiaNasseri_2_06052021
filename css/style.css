@@ -176,7 +176,7 @@ i.fas {
     align-items: center;
     color: #0065fc;
     font-size: 12px;
-    border: #deebff solid 2px;
+    border: #d5d9db solid 2px;
     padding: 1em;
     height: 1.5rem;
     width: 1.5rem;
@@ -535,7 +535,7 @@ i.fas {
     }
 }
 /*----------Footer----------*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .footer {
         flex-direction: column;
         align-items: flex-start;
@@ -545,12 +545,12 @@ i.fas {
 }
 
 /*--------------------Version tablette----------------------*/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .accommodation {
-        padding: 0
+        padding: 0;
     }
     .city-accommodation__btn {
-       padding-top: 2%; 
+        padding-top: 2%;
     }
     .city-accommodation__layout,
     .activity__layout {
@@ -563,7 +563,7 @@ i.fas {
 }
 
 /*-------Responsive dekstop petits écrans------*/
-@media (min-width: 1024px) and (max-width: 1378px) {
+@media screen and (min-width: 1024px) and (max-width: 1378px) {
     .accommodation {
         flex-direction: column-reverse;
     }
