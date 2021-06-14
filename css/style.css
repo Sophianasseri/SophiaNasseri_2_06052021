@@ -450,16 +450,22 @@ i.fas {
     .search__description {
         margin-right: 5%;
     }
+    .searchbar__box, .searchbar__btn--mobile, .search-result__logo {
+        padding: 1rem 1rem;
+    }
     .searchbar__btn {
         display: none;
     }
     .searchbar__box {
-        padding: 1vh 5vw;
+        padding: 1vh 3vw;
     }
     .searchbar__btn--mobile {
         font-size: 1.1rem;
         border-radius: 30%;
         margin-left: -10px;
+    }
+    .searchbar__logo, .searchbar__btn {
+        font-size: 1em;
     }
     /*------Filtres------*/
     .filter {
@@ -514,6 +520,13 @@ i.fas {
     .city-accommodation__btn {
         padding: 0;
     }
+    .popular-card__content {
+        position: relative;
+    }
+    .popular-card__rating {
+        position: absolute;
+        bottom: 5%;
+    }  
     /*Cartes activités*/
     .activity {
         padding: 1rem 0;
