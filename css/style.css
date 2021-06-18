@@ -574,6 +574,13 @@ i.fas {
         display: contents;
     }
 }
+/*---Petits écrans mobil-----*/
+
+@media screen and (min-width: 280px) and (max-width: 319px) {
+    .searchbar__box, .searchbar__btn--mobile, .search-result__logo {
+        padding: 0.9rem 1rem; 
+        font-size: 14px;
+}
 
 /*-------Responsive dekstop petits écrans------*/
 @media screen and (min-width: 1024px) and (max-width: 1378px) {
