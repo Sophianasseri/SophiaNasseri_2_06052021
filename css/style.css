@@ -7,13 +7,20 @@
 }
 
 body {
-    max-width: 1440px;
+   
     margin: 0 auto;
     width: 100%;
 }
 .container,
 .header {
     margin: 0 3%;
+    max-width: 1440px;
+}
+@media screen and (min-width: 1441px) {
+    .container,
+    .header {
+        margin: 0 auto;
+    }
 }
 a {
     text-decoration: none;
@@ -379,11 +386,6 @@ i.fas {
 .footer-section__content {
     padding: 1rem 0;
 }
-@media (min-width: 1441px) {
-    .footer {
-        margin: 0 3%;
-    }
-}
 
 /*------------------------------Version Mobile------------------------------*/
 @media (max-width: 1023px) {
@@ -574,12 +576,12 @@ i.fas {
         display: contents;
     }
 }
-/*---Petits écrans mobil-----*/
+/*---Petits écrans mobile-----*/
 
 @media screen and (min-width: 280px) and (max-width: 319px) {
     .searchbar__box, .searchbar__btn--mobile, .search-result__logo {
         padding: 0.9rem 1rem; 
-        font-size: 14px;
+        font-size: 14px;}
 }
 
 /*-------Responsive dekstop petits écrans------*/
